@@ -8,3 +8,16 @@
 	required = true
 [core]
 	editor = vim
+[diff]
+	tool = vscode-diff
+[difftool]
+	prompt = false
+[difftool "vscode-diff"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+    tool = vscode-merge
+[mergetool]
+    keepBackup = false
+[mergetool "vscode-merge"]
+    cmd = code --wait $MERGED
+
