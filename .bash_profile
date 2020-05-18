@@ -1,3 +1,10 @@
+# increase the history size
+HISTSIZE=5000
+HISTFILESIZE=10000
+
+# always append to history
+shopt -s histappend
+
 # homebrew completions
 if type brew &>/dev/null; then
   HOMEBREW_PREFIX="$(brew --prefix)"
