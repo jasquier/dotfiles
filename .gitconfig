@@ -20,3 +20,6 @@
 	keepBackup = false
 [mergetool "vscode-merge"]
 	cmd = code --wait $MERGED
+[alias]
+	last = log -1 HEAD
+	tree = log --graph --oneline

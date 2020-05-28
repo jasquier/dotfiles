@@ -43,9 +43,21 @@ set history=1000
 " enable spell checking
 set spell
 
-" Do not recognize octal numbers for Ctrl-A and Ctrl-X, most users find it
-" confusing.
+" Do not recognize octal numbers for Ctrl-A and Ctrl-X, most users find it confusing.
 set nrformats-=octal
 
 " the number of screen lines to keep above and below the cursor
 set scrolloff=5
+
+" in git commit messages, let's make a hard wrap at 72 characters
+autocmd FileType gitcommit set textwidth=72
+
+" color the column after the hard wrap
+set colorcolumn=+1
+
+" in git commit messages, also color the fifty-first column (for titles)
+autocmd FileType gitcommit set colorcolumn+=51
+
+" change the color of highlighted columns
+highlight ColorColumn ctermbg=grey guibg=grey
+
