@@ -53,10 +53,7 @@ set scrolloff=5
 autocmd FileType gitcommit set textwidth=72
 
 " color the column after the hard wrap
-set colorcolumn=+1
-
-" in git commit messages, also color the fifty-first column (for titles)
-autocmd FileType gitcommit set colorcolumn+=51
+autocmd FileType gitcommit set colorcolumn=+1
 
 " change the color of highlighted columns
 highlight ColorColumn ctermbg=grey guibg=grey

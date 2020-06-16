@@ -46,7 +46,7 @@ export CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -O0 -std=
 export LDLIBS="-lcs50 -lm"
 
 # functions
-cdl() { cd "$@" && gls -AFGh1 --color; }
+cdl() { cd "$@" && lsd -A1; }
 chrome() { 
     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" http://www."$@";
 }
