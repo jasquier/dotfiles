@@ -8,6 +8,7 @@
 	required = true
 [core]
 	editor = vim
+	hookspath = .githooks
 [diff]
 	tool = vscode-diff
 [difftool]
@@ -22,8 +23,11 @@
 	cmd = code --wait $MERGED
 [alias]
 	last = log -1 --abbrev-commit --stat HEAD
-	tree = log --graph --oneline
 	branch-cleanup = "!git branch --merged master | grep -v \"\\* master\" | xargs -n 1 git push --delete origin; git branch --merged master | grep -v \"\\* master\" | xargs -n 1 git branch -d"
 	lg = log --abbrev-commit --graph --stat
+	st = status
+	ci = commit
+	co = checkout
+	tre = log --graph --oneline
 [pull]
 	rebase = false
