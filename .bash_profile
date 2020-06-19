@@ -1,3 +1,6 @@
+# setup less to show lines and percentage at the cost of speed
+export MANPAGER='less -M +Gg'
+
 # increase the history size
 HISTSIZE=5000
 HISTFILESIZE=10000
