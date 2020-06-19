@@ -1,4 +1,4 @@
-Tue Jun 16 13:11:47 EDT 2020
+Fri Jun 19 11:01:14 EDT 2020
 aalib: Portable ASCII art graphics library
 angular-cli: CLI tool for Angular
 ansiweather: Weather in your terminal, with ANSI colors and Unicode symbols
@@ -42,6 +42,7 @@ googler: Google Search and News from the command-line
 gradle: Open-source build automation tool based on the Groovy and Kotlin DSL
 graphite2: Smart font renderer for non-Roman scripts
 graphviz: Graph visualization software from AT&T and Bell Labs
+grep: GNU grep, egrep and fgrep
 grip: GitHub Markdown previewer
 gts: GNU triangulated surface library
 guile: GNU Ubiquitous Intelligent Language for Extensions
