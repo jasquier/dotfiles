@@ -57,7 +57,7 @@ cowfortune() { fortune -a | cowsay | lolcat "$@"; }
 curljq() { curl -s "$@" | jq; }
 lm() { gls -AFgo --color --time-style="+| %F %T |" "$@" | tail +2 | tr -s " " | cut -d " " -f 4-; }
 lns() { cat package.json | jq -C .'scripts' "$@"; }
-trash() { mv "$@" /Users/jasquier/trash; }
+trash() { /bin/mv -i $@ /Users/jasquier/trash; }
 update_cpu_temps() {
     date >> ~/cpu_temps.txt
     osx-cpu-temp >> ~/cpu_temps.txt
