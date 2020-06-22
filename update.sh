@@ -8,6 +8,5 @@ cp -f /Users/jasquier/.vimrc .
 cp -f /Users/jasquier/.githooks/* .githooks/
 
 echo "Updating contents of brew-list.txt"
-date > brew-list.txt
-brew desc $(brew list) >> brew-list.txt
+brew desc $(brew list) > brew-list.txt
 
