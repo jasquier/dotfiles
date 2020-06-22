@@ -29,5 +29,6 @@
 	ci = commit
 	co = checkout
 	tre = log --graph --oneline
+	diffstaged = diff --staged
 [pull]
 	rebase = false
