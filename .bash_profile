@@ -8,6 +8,9 @@ HISTFILESIZE=10000
 # always append to history
 shopt -s histappend
 
+# make history immediately available to all shells
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
 # homebrew completions
 if type brew &>/dev/null; then
   HOMEBREW_PREFIX="$(brew --prefix)"
@@ -26,6 +29,9 @@ if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
     source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
     GIT_PROMPT_THEME=Minimal
 fi
+
+# heroku autocomplete setup
+HEROKU_AC_BASH_SETUP_PATH=/Users/jasquier/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
 
 # thefuck command
 eval $(thefuck --alias)
