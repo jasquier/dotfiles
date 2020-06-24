@@ -1,3 +1,16 @@
+" enter the current millenium
+set nocompatible
+
+" enable plugins (for netrw)
+filetype plugin on
+
+" search down into subfolder
+" provides tab completion for all file related tasks
+set path+=**
+
+" display all matching files when we tab complete
+set wildmenu
+
 " turn on the ruler
 set ruler
 
