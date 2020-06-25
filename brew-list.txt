@@ -72,6 +72,7 @@ libyaml: YAML Parser
 libzip: C library for reading, creating, and modifying zip archives
 lolcat: Rainbows and unicorns in your console!
 lsd: Clone of ls with colorful output, file type icons, and more
+lua: Powerful, lightweight programming language
 lynx: Text-based web browser
 lzo: Real-time data compression library
 markdown: Text-to-HTML conversion tool
@@ -95,6 +96,7 @@ p11-kit: Library to load and enumerate PKCS#11 modules
 pango: Framework for layout and rendering of i18n text
 pcre: Perl compatible regular expressions library
 pcre2: Perl compatible regular expressions library with a new API
+perl: Highly capable, feature-rich programming language
 springboot: [no description]
 pixman: Low-level library for pixel manipulation
 pkg-config: Manage compile and link flags for libraries
@@ -131,6 +133,7 @@ tty-clock: Digital clock in ncurses
 tty-solitaire: Ncurses-based klondike solitaire game
 unbound: Validating, recursive, caching DNS resolver
 utf8proc: Clean C library for processing UTF-8 Unicode data
+vim: Vi 'workalike' with many additional features
 watch: Executes a program periodically, showing output fullscreen
 webp: Image format providing lossless and lossy compression for web images
 wget: Internet file retriever
