@@ -61,6 +61,7 @@ chrome() {
 }
 cowfortune() { fortune -a | cowsay | lolcat "$@"; } 
 curljq() { curl -s "$@" | jq; }
+findnodemodules() { find . -name "node_modules" -prune; }
 lm() { gls -AFgo --color --time-style="+| %F %T |" "$@" | tail +2 | tr -s " " | cut -d " " -f 4-; }
 lns() { cat package.json | jq -C .'scripts' "$@"; }
 trash() { /bin/mv -i $@ /Users/jasquier/trash; }
@@ -103,11 +104,13 @@ alias clock='tty-clock -c -C 6 "$@"'
 
 alias ss='echo "cols: $(tput cols)" && echo "lines: $(tput lines)" "$@"'
 
+alias dirsizes='du -sk * | sort -n'
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # start-up commands
-fortune | cowsay
-
+fortune | cowsay;
+echo "Don't forget to check your tasks..." | lolcat;
