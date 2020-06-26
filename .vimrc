@@ -31,6 +31,7 @@ set expandtab
 
 " make tabs 4 spaces
 set tabstop=4
+set shiftwidth=4
 
 " enable line wrapping
 set wrap
@@ -70,4 +71,7 @@ autocmd FileType gitcommit set colorcolumn=+1
 
 " change the color of highlighted columns
 highlight ColorColumn ctermbg=grey guibg=grey
+
+" enable line numbers
+set number
 
