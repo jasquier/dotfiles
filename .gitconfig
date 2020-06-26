@@ -30,5 +30,6 @@
 	co = checkout
 	tre = log --graph --oneline
 	diffstaged = diff --staged
+	cim = commit -m
 [pull]
 	rebase = false
