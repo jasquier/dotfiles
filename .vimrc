@@ -63,15 +63,18 @@ set nrformats-=octal
 " the number of screen lines to keep above and below the cursor
 set scrolloff=5
 
-" in git commit messages, let's make a hard wrap at 72 characters
-autocmd FileType gitcommit set textwidth=72
+" in git commit messages
+"   turn off spell checking
+"   hard wrap at 72 characters
+"   color the column after the hard wrap
+autocmd FileType gitcommmit set nospell
+autocmd FileType gitcommmit set textwidth=72
+autocmd FileType gitcommmit set colorcolumn=+1
 
-" color the column after the hard wrap
-autocmd FileType gitcommit set colorcolumn=+1
+" in git rebases
+"   turn off spell checking
+autocmd FileType gitrebase set nospell
 
 " change the color of highlighted columns
 highlight ColorColumn ctermbg=grey guibg=grey
-
-" enable line numbers
-set number
 
