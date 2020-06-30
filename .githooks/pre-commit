@@ -4,6 +4,6 @@ LIGHTGREEN="\033[38;5;42m"
 
 # Exit with non-zero status if any of the following commands fail
 set -e
-# Run shfmt on staged files only
-printf "${LIGHTGREEN}Running shfmt on staged files...${NC}\n"
-shfmt -w $(git diff-index --cached --name-only HEAD)
+# Run shfmt on all files
+printf "${LIGHTGREEN}Running shfmt on all files...${NC}\n"
+shfmt -d .
