@@ -72,7 +72,6 @@ update_cpu_temps() {
 
 # aliases
 alias bashrc='vim ~/.bash_profile'
-
 alias oldls='ls "$@"'
 alias ls='gls -FGh --color "$@"'
 alias la='gls -AFGh --color "$@"'
@@ -81,30 +80,22 @@ alias ll='gls -FGhl --color "$@"'
 alias lla='gls -AFGhl --color "$@"'
 alias lal='gls -AFGhl --color "$@"'
 alias later='gls -AFGhlrt --color "$@"'
-
 alias tre='tree -CF "$@"'
-
 alias g='git "$@"'
 alias gs='git status "$@"'
 alias gss='git status -s "$@"'
 alias gch='git checkout "$@"'
-
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com "$@"'
-
 alias n='npm "$@"'
-
 alias cls='clear "$@"'
-
 # safety first
 alias cp='cp -i "$@"'
 alias mv='mv -i "$@"'
 alias rm='rm -i "$@"'
-
 alias clock='tty-clock -c -C 6 "$@"'
-
 alias ss='echo "cols: $(tput cols)" && echo "lines: $(tput lines)" "$@"'
-
 alias dirsizes='du -sk * | sort -n'
+alias rectangle='open /Applications/Rectangle.app'
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
