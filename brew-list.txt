@@ -144,7 +144,6 @@ xz: General-purpose data compression with high compression ratio
 z: Tracks most-used directories to make cd smarter
 blue-jeans
 discord
-emacs
 firefox
 font-hack-nerd-font
 github
