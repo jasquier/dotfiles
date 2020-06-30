@@ -142,3 +142,23 @@ wget: Internet file retriever
 xpdf: PDF viewer
 xz: General-purpose data compression with high compression ratio
 z: Tracks most-used directories to make cd smarter
+blue-jeans
+discord
+emacs
+firefox
+font-hack-nerd-font
+github
+google-chrome
+intellij-idea-ce
+iterm2
+java
+mono-mdk
+postman
+racket
+rectangle
+slack
+spotify
+steam
+twitch
+visual-studio-code
+zoomus
