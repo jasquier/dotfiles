@@ -105,7 +105,6 @@ plantuml: Draw UML diagrams
 progress: Progress: Coreutils Progress Viewer
 protobuf: Protocol buffers (Google's data interchange format)
 protobuf@3.7: Protocol buffers (Google's data interchange format)
-python: Interpreted, interactive, object-oriented programming language
 python@2: Interpreted, interactive, object-oriented programming language
 python@3.8: Interpreted, interactive, object-oriented programming language
 qt: Cross-platform application and UI framework
