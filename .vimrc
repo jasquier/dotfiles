@@ -63,6 +63,12 @@ set nrformats-=octal
 " the number of screen lines to keep above and below the cursor
 set scrolloff=5
 
+" show partially input commands
+set showcmd
+
+" turn on the matchit plugin
+packadd! matchit
+
 " in git commit messages
 "   turn off spell checking
 "   hard wrap at 72 characters
