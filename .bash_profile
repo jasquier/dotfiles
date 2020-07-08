@@ -62,6 +62,7 @@ chrome() {
 cowfortune() { fortune -a | cowsay | lolcat "$@"; } 
 curljq() { curl -s "$@" | jq; }
 findnodemodules() { find . -name "node_modules" -prune; }
+mvnrepo() { mvn help:evaluate -Dexpression=settings.localRepository | grep -v "\[INFO\]"; }
 lm() { gls -AFgo --color --time-style="+| %F %T |" "$@" | tail +2 | tr -s " " | cut -d " " -f 4-; }
 lns() { cat package.json | jq -C .'scripts' "$@"; }
 trash() { /bin/mv -i $@ /Users/jasquier/trash; }
@@ -101,6 +102,17 @@ alias rectangle='open /Applications/Rectangle.app'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# fix bash tab compeletion
+# If there are multiple matches for completion, Tab should cycle through them
+bind 'TAB':menu-complete
+
+# Display a list of the matching files
+bind "set show-all-if-ambiguous on"
+
+# Perform partial completion on the first Tab press,
+# only start cycling full results on the second Tab press
+bind "set menu-complete-display-prefix on"
 
 # start-up commands
 fortune | cowsay;
