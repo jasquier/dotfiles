@@ -28,8 +28,9 @@
 	st = status
 	ci = commit
 	co = checkout
-	tre = log --graph --oneline
+	tre = log --all --graph --oneline
 	diffstaged = diff --staged
 	cim = commit -m
+	lga = log --abbrev-commit --all --graph --stat
 [pull]
 	rebase = false
