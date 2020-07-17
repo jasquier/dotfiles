@@ -38,6 +38,7 @@ glib: Core application library for C
 gmp: GNU multiple precision arithmetic library
 gnu-indent: C code prettifier
 gnu-typist: GNU typing tutor
+gnu-units: GNU unit conversion tool
 gnutls: GNU Transport Layer Security (TLS) Library
 googler: Google Search and News from the command-line
 gradle: Open-source build automation tool based on the Groovy and Kotlin DSL
