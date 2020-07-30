@@ -1,6 +1,7 @@
 aalib: Portable ASCII art graphics library
 angular-cli: CLI tool for Angular
 ansiweather: Weather in your terminal, with ANSI colors and Unicode symbols
+aom: Codec library for encoding and decoding AV1 video streams
 asciiquarium: Aquarium animation in ASCII art
 aview: ASCII-art image browser and animation viewer
 bandwhich: Terminal bandwidth utilization tool
@@ -19,13 +20,17 @@ cmatrix: Console Matrix
 coreutils: GNU File, Shell, and Text utilities
 cowsay: Configurable talking characters in ASCII art
 ctags: Reimplementation of ctags(1)
+dav1d: AV1 decoder targeted to be small and fast
 deno: Secure runtime for JavaScript and TypeScript
 docker: Pack, ship and run any application as a lightweight container
 emacs: GNU Emacs text editor
+ffmpeg: Play, record, convert, and stream audio and video
 figlet: Banner-like program prints strings as ASCII art
+flac: Free lossless audio codec
 fontconfig: XML-based font configuration API for X Windows
 fortune: Infamous electronic fortune-cookie generator
 freetype: Software library to render fonts
+frei0r: Minimalistic plugin API for video effects
 fribidi: Implementation of the Unicode BiDi algorithm
 gd: Graphics library to dynamically manipulate images
 gdb: GNU debugger
@@ -33,7 +38,10 @@ gdbm: GNU database manager
 gettext: GNU internationalization (i18n) and localization (l10n) library
 gh: GitHub command-line tool
 ghc: Glorious Glasgow Haskell Compilation System
+giflib: Library and utilities for processing GIFs
 git: Distributed revision control system
+git-lfs: Git extension for versioning large files
+glfw: Multi-platform library for OpenGL applications
 glib: Core application library for C
 gmp: GNU multiple precision arithmetic library
 gnu-indent: C code prettifier
@@ -59,19 +67,29 @@ jenv: Manage your Java environment
 jmeter: Load testing and performance measurement application
 jpeg: Image manipulation library
 jq: Lightweight and flexible command-line JSON processor
+lame: High quality MPEG Audio Layer III (MP3) encoder
+leptonica: Image processing and image analysis library
+libass: Subtitle renderer for the ASS/SSA subtitle format
+libbluray: Blu-Ray disc playback library for media players like VLC
 libevent: Asynchronous event library
 libffi: Portable Foreign Function Interface library
 libidn2: International domain name library (IDNA2008, Punycode and TR46)
 libmodplug: Library from the Modplug-XMMS project
 libogg: Ogg Bitstream Library
 libpng: Library for manipulating PNG images
+libsamplerate: Library for sample rate conversion of audio data
+libsndfile: C library for files containing sampled sound
+libsoxr: High quality, one-dimensional sample-rate conversion library
 libtasn1: ASN.1 structure parser library
 libtiff: TIFF library and utilities
 libtool: Generic library support script
 libunistring: C string library for manipulating Unicode strings
+libvidstab: Transcode video stabilization plugin
 libvorbis: Vorbis General Audio Compression Codec
+libvpx: VP8/VP9 video codec
 libyaml: YAML Parser
 libzip: C library for reading, creating, and modifying zip archives
+little-cms2: Color management engine supporting ICC profiles
 lolcat: Rainbows and unicorns in your console!
 lsd: Clone of ls with colorful output, file type icons, and more
 lua: Powerful, lightweight programming language
@@ -82,6 +100,7 @@ maven: Java-based project management
 maven-completion: Bash completion for Maven
 mit-scheme: MIT/GNU Scheme development tools and runtime library
 mongodb-community: High-performance, schema-free, document-oriented database
+mono: Cross platform, open source .NET development framework
 monolith: CLI tool for saving complete web pages as a single HTML file
 mysql: Open source relational database management system
 ncdu: NCurses Disk Usage
@@ -90,9 +109,12 @@ netpbm: Image manipulation
 nettle: Low-level cryptographic library
 node: Platform built on V8 to build network applications
 oniguruma: Regular expressions library
+opencore-amr: Audio codecs extracted from Android open source project
 openjdk: Development kit for the Java programming language
 openjdk@11: Development kit for the Java programming language
+openjpeg: Library for JPEG-2000 image manipulation
 openssl@1.1: Cryptography and SSL/TLS Toolkit
+opus: Audio codec
 osx-cpu-temp: Outputs current CPU temperature for OSX
 p11-kit: Library to load and enumerate PKCS#11 modules
 pango: Framework for layout and rendering of i18n text
@@ -109,9 +131,12 @@ protobuf@3.7: Protocol buffers (Google's data interchange format)
 python@2: Interpreted, interactive, object-oriented programming language
 python@3.8: Interpreted, interactive, object-oriented programming language
 qt: Cross-platform application and UI framework
+rav1e: The fastest and safest AV1 encoder
 readline: Library for command-line editing
 redis: Persistent key-value database, with built-in net interface
 rogue: Dungeon crawling video game
+rtmpdump: Tool for downloading RTMP streaming media
+rubberband: Audio time stretcher tool and library
 ruby: Powerful, clean, object-oriented scripting language
 sbt: Build tool for Scala projects
 screenfetch: Generate ASCII art with terminal, shell, and OS info
@@ -121,10 +146,15 @@ sdl2_mixer: Sample multi-channel audio mixer library
 sdl2_ttf: Library for using TrueType fonts in SDL applications
 shfmt: Autoformat shell script source code
 sl: Prints a steam locomotive if you type sl instead of ls
+snappy: Compression/decompression library aiming for high speed
+speex: Audio codec designed for speech
 sqlite: Command-line interface for SQLite
+srt: Secure Reliable Transport
 task: Feature-rich console based todo list manager
 telnet: User interface to the TELNET protocol
+tesseract: OCR (Optical Character Recognition) engine
 thefuck: Programatically correct mistyped console commands
+theora: Open video compression format
 tldr: Simplified and community-driven man pages
 tmux: Terminal multiplexer
 tnftp: NetBSD's FTP client
@@ -139,7 +169,10 @@ vim: Vi 'workalike' with many additional features
 watch: Executes a program periodically, showing output fullscreen
 webp: Image format providing lossless and lossy compression for web images
 wget: Internet file retriever
+x264: H.264/AVC encoder
+x265: H.265/HEVC encoder
 xpdf: PDF viewer
+xvid: High-performance, high-quality MPEG-4 video library
 xz: General-purpose data compression with high compression ratio
 z: Tracks most-used directories to make cd smarter
 blue-jeans
