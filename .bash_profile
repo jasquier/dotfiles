@@ -57,10 +57,9 @@ export LDLIBS="-lcs50 -lm"
 # functions
 cdl() { cd "$@" && lsd -A1; }
 chrome() { 
-    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" http://www."$@";
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" "$@";
 }
 cowfortune() { fortune -a | cowsay | lolcat "$@"; } 
-curljq() { curl -s "$@" | jq; }
 findnodemodules() { find . -name "node_modules" -prune; }
 mvnrepo() { mvn help:evaluate -Dexpression=settings.localRepository | grep -v "\[INFO\]"; }
 lm() { gls -AFgo --color --time-style="+| %F %T |" "$@" | tail +2 | tr -s " " | cut -d " " -f 4-; }
@@ -113,6 +112,9 @@ bind "set show-all-if-ambiguous on"
 # Perform partial completion on the first Tab press,
 # only start cycling full results on the second Tab press
 bind "set menu-complete-display-prefix on"
+
+# Add $HOME/bin to the path
+export PATH="$HOME/bin:$PATH"
 
 # start-up commands
 fortune | cowsay;
