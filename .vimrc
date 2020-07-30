@@ -54,9 +54,6 @@ set formatoptions+=j
 " increase the undo limit
 set history=1000
 
-" enable spell checking
-set spell
-
 " Do not recognize octal numbers for Ctrl-A and Ctrl-X, most users find it confusing.
 set nrformats-=octal
 
@@ -83,4 +80,7 @@ autocmd FileType gitrebase set nospell
 
 " change the color of highlighted columns
 highlight ColorColumn ctermbg=grey guibg=grey
+
+" Make Y behave more like C and D
+:map Y y$
 
