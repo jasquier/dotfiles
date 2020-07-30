@@ -32,5 +32,6 @@
 	diffstaged = diff --staged
 	cim = commit -m
 	lga = log --abbrev-commit --all --graph --stat
+	aliases = "!git config --global --list | grep alias | cut -d '.' -f 2-"
 [pull]
 	rebase = false
