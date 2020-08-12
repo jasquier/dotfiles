@@ -48,6 +48,7 @@ gnu-indent: C code prettifier
 gnu-typist: GNU typing tutor
 gnu-units: GNU unit conversion tool
 gnutls: GNU Transport Layer Security (TLS) Library
+gobject-introspection: Generate introspection data for GObject libraries
 googler: Google Search and News from the command-line
 gradle: Open-source build automation tool based on the Groovy and Kotlin DSL
 graphite2: Smart font renderer for non-Roman scripts
