@@ -84,3 +84,6 @@ highlight ColorColumn ctermbg=grey guibg=grey
 " Make Y behave more like C and D
 :map Y y$
 
+" show whitespace characters as the following characters, use :set list to see
+:set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+
