@@ -14,7 +14,7 @@ brew-cask-completion: Fish completion for brew-cask
 cairo: Vector graphics library with cross-device output support
 cask: Emacs dependency management
 cataclysm: Fork/variant of Cataclysm Roguelike
-cf-cli: The official command line client for Cloud Foundry
+cf-cli: [no description]
 cmark-gfm: C implementation of GitHub Flavored Markdown
 cmatrix: Console Matrix
 coreutils: GNU File, Shell, and Text utilities
@@ -60,14 +60,18 @@ guile: GNU Ubiquitous Intelligent Language for Extensions
 harfbuzz: OpenType text shaping engine
 heroku: Everything you need to get started with Heroku
 heroku-node: node.js dependency for heroku
+historian: Command-line utility for managing shell history in a SQLite database
 htop: Improved top (interactive process viewer)
+http-server: Simple zero-configuration command-line HTTP server
 icu4c: C/C++ and Java libraries for Unicode and globalization
+jansson: C library for encoding, decoding, and manipulating JSON
 jasper: Library for manipulating JPEG-2000 images
 jenkins: Extendable open source continuous integration server
 jenv: Manage your Java environment
 jmeter: Load testing and performance measurement application
 jpeg: Image manipulation library
 jq: Lightweight and flexible command-line JSON processor
+krb5: Network authentication protocol
 lame: High quality MPEG Audio Layer III (MP3) encoder
 leptonica: Image processing and image analysis library
 libass: Subtitle renderer for the ASS/SSA subtitle format
@@ -101,6 +105,7 @@ maven: Java-based project management
 maven-completion: Bash completion for Maven
 mit-scheme: MIT/GNU Scheme development tools and runtime library
 mongodb-community: High-performance, schema-free, document-oriented database
+mongodb-database-tools: This package contains standard utilities for interacting with MongoDB.
 mono: Cross platform, open source .NET development framework
 monolith: CLI tool for saving complete web pages as a single HTML file
 mysql: Open source relational database management system
@@ -126,13 +131,15 @@ springboot: [no description]
 pixman: Low-level library for pixel manipulation
 pkg-config: Manage compile and link flags for libraries
 plantuml: Draw UML diagrams
-progress: Progress: Coreutils Progress Viewer
+postgresql: Object-relational database system
+progress: Coreutils progress viewer
 protobuf: Protocol buffers (Google's data interchange format)
 protobuf@3.7: Protocol buffers (Google's data interchange format)
 python@2: Interpreted, interactive, object-oriented programming language
 python@3.8: Interpreted, interactive, object-oriented programming language
+python@3.9: Interpreted, interactive, object-oriented programming language
 qt: Cross-platform application and UI framework
-rav1e: The fastest and safest AV1 encoder
+rav1e: Fastest and safest AV1 video encoder
 readline: Library for command-line editing
 redis: Persistent key-value database, with built-in net interface
 rogue: Dungeon crawling video game
@@ -153,6 +160,7 @@ sqlite: Command-line interface for SQLite
 srt: Secure Reliable Transport
 task: Feature-rich console based todo list manager
 telnet: User interface to the TELNET protocol
+terminal-notifier: Send macOS User Notifications from the command-line
 tesseract: OCR (Optical Character Recognition) engine
 thefuck: Programatically correct mistyped console commands
 theora: Open video compression format
@@ -176,7 +184,7 @@ xpdf: PDF viewer
 xvid: High-performance, high-quality MPEG-4 video library
 xz: General-purpose data compression with high compression ratio
 z: Tracks most-used directories to make cd smarter
-blue-jeans
+zsh: UNIX shell (command interpreter)
 discord
 firefox
 font-hack-nerd-font
@@ -184,11 +192,11 @@ github
 google-chrome
 intellij-idea-ce
 iterm2
-java
 mono-mdk
 postman
 racket
 rectangle
+robo-3t
 slack
 spotify
 steam
