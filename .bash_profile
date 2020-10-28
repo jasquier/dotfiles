@@ -75,7 +75,7 @@ alias bashrc='vim ~/.bash_profile'
 alias ls='gls -FGh --color "$@"'
 alias la='gls -AFGh --color "$@"'
 alias la1='lsd -A1 "$@"'
-alias ll='gls -FGhl --color "$@"'
+alias ll='lsd -AFhl "$@"'
 alias lla='gls -AFGhl --color "$@"'
 alias lal='gls -AFGhl --color "$@"'
 alias later='gls -AFGhlrt --color "$@"'
@@ -115,6 +115,12 @@ bind "set menu-complete-display-prefix on"
 
 # Add $HOME/bin to the path
 export PATH="$HOME/bin:$PATH"
+
+# Add to our command history db on shell launch
+hist import
+
+# Set Flask to run in development mode
+export FLASK_ENV=development
 
 # start-up commands
 fortune | cowsay;
