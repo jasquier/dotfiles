@@ -87,3 +87,12 @@ highlight ColorColumn ctermbg=grey guibg=grey
 " show whitespace characters as the following characters, use :set list to see
 :set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 
+" Make v in netrw split to the right
+let g:netrw_altv=1
+
+" make vertical splitting the default for p previewing files
+let g:netrw_preview=1
+
+" when a preview window is open make it take 70% of the available columns
+let g:netrw_winsize=70
+
