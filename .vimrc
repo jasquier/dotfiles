@@ -63,6 +63,9 @@ set scrolloff=5
 " show partially input commands
 set showcmd
 
+" turn on line numbers
+set number
+
 " turn on the matchit plugin
 packadd! matchit
 
@@ -93,6 +96,10 @@ let g:netrw_altv=1
 " make vertical splitting the default for p previewing files
 let g:netrw_preview=1
 
-" when a preview window is open make it take 70% of the available columns
-let g:netrw_winsize=70
+" when a preview window is open make it take 80% of the available columns
+let g:netrw_winsize=80
+
+" use our downloaded monokai colorscheme
+" https://raw.githubusercontent.com/crusoexia/vim-monokai/master/colors/monokai.vim
+:colorscheme monokai
 
