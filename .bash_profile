@@ -9,19 +9,13 @@ HISTFILESIZE=10000
 shopt -s histappend
 
 # make history immediately available to all shells
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+# export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+# allow the use of ctrl-s in ctrl-r history searches
+stty -ixon
 
 # homebrew completions
-if type brew &>/dev/null; then
-  HOMEBREW_PREFIX="$(brew --prefix)"
-  if [[ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]]; then
-    source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
-  else
-    for COMPLETION in "${HOMEBREW_PREFIX}/etc/bash_completion.d/"*; do
-      [[ -r "$COMPLETION" ]] && source "$COMPLETION"
-    done
-  fi
-fi
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # bash-git-completion
 if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
@@ -32,6 +26,9 @@ fi
 
 # heroku autocomplete setup
 HEROKU_AC_BASH_SETUP_PATH=/Users/jasquier/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
+
+# gh autocomplete setup
+eval "$(gh completion --shell bash)"
 
 # thefuck command
 eval $(thefuck --alias)
@@ -55,15 +52,17 @@ export CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -O0 -std=
 export LDLIBS="-lcs50 -lm"
 
 # functions
+bashopts() { set -o; shopt; }
 cdl() { cd "$@" && lsd -A1; }
-chrome() { 
+chrome() {
     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" "$@";
 }
-cowfortune() { fortune -a | cowsay | lolcat "$@"; } 
+cowfortune() { fortune -a | cowsay | lolcat "$@"; }
 findnodemodules() { find . -name "node_modules" -prune; }
 mvnrepo() { mvn help:evaluate -Dexpression=settings.localRepository | grep -v "\[INFO\]"; }
 lm() { gls -AFgo --color --time-style="+| %F %T |" "$@" | tail +2 | tr -s " " | cut -d " " -f 4-; }
 lns() { cat package.json | jq -C .'scripts' "$@"; }
+pjson() { cat package.json | jq; }
 trash() { /bin/mv -i $@ /Users/jasquier/trash; }
 update_cpu_temps() {
     date >> ~/cpu_temps.txt
@@ -74,8 +73,10 @@ update_cpu_temps() {
 alias bashrc='vim ~/.bash_profile'
 alias ls='gls -FGh --color "$@"'
 alias la='gls -AFGh --color "$@"'
-alias la1='lsd -A1 "$@"'
-alias ll='lsd -AFhl "$@"'
+alias l='lsd -A1 "$@"'
+alias ltr='lsd -A1rt "$@"'
+alias ll='lsd -Al "$@"'
+alias lll='lsd -Al --total-size "$@"'
 alias lla='gls -AFGhl --color "$@"'
 alias lal='gls -AFGhl --color "$@"'
 alias later='gls -AFGhlrt --color "$@"'
@@ -85,17 +86,36 @@ alias g='git "$@"'
 alias gs='git status "$@"'
 alias gss='git status -s "$@"'
 alias gch='git checkout "$@"'
-alias myip='dig +short myip.opendns.com @resolver1.opendns.com "$@"'
+alias ip='dig +short myip.opendns.com @resolver1.opendns.com "$@"'
+alias localip='ipconfig getifaddr en0 "$@"'
 alias n='npm "$@"'
 alias cls='clear "$@"'
 alias clock='tty-clock -c -C 6 "$@"'
 alias ss='echo "cols: $(tput cols)" && echo "lines: $(tput lines)" "$@"'
 alias dirsizes='du -sk * | sort -n'
 alias rectangle='open /Applications/Rectangle.app'
+# Trim newlines and copy to clipboard
+alias c="tr -d '\n' | pbcopy"
 # safety first
 alias cp='cp -i "$@"'
 alias mv='mv -i "$@"'
 alias rm='rm -i "$@"'
+# Enable colored 'grep' output
+alias cgrep='grep --color -n'
+alias cfgrep='fgrep --color -n'
+alias cegrep='egrep --color -n'
+# Allow grepping of history
+alias hists='history | grep --color "$@"'
+# Have mkdir create intermediate dirs when doing things like 'mkdir alice/bob/caroline'
+alias mkdir='mkdir -p'
+# Pretty print the path
+alias path='echo $PATH | tr -s ":" "\n"'
+# npm ls --depth 0 shorthand
+alias npmls='npm ls --depth 0'
+# show the package.json in the current dir
+alias pj='bat package.json'
+# quickly open todays notes
+alias note='~/notes/opennote.sh'
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
@@ -116,11 +136,27 @@ bind "set menu-complete-display-prefix on"
 # Add $HOME/bin to the path
 export PATH="$HOME/bin:$PATH"
 
-# Add to our command history db on shell launch
-hist import
-
 # Set Flask to run in development mode
 export FLASK_ENV=development
+
+# Enable tab completion for 'g' by marking it as an alias for 'git'
+if type _git &> /dev/null; then
+    complete -o default -o nospace -F _git g;
+fi;
+
+# Enable tab completion for 'n' by marking it as an alias for 'npm'
+#if type npm &> /dev/null; then
+#    complete -o default -o nospace -F npm n;
+#fi;
+
+# Enable changing directories by typing the directory name without 'cd'
+shopt -s autocd
+
+# Enable usage of ** in globs
+shopt -s globstar
+
+# Add to our command history db on shell launch
+hist import
 
 # start-up commands
 fortune | cowsay;
