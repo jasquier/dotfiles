@@ -27,7 +27,7 @@ while read -r line; do
   # Subject line tests
   if [[ $lineno -eq 1 ]]; then
     [[ $length -gt 50 ]] && error "Limit the subject line to 50 characters"
-    [[ ! "$line" =~ ^[A-Z].*$ ]] && error "Capitalize the subject line"
+    [[ ! "$line" =~ ^(fixup! |squash! )?[A-Z].*$ ]] && error "Capitalize the subject line"
     [[ "$line" == *. ]] && error "Do not end the subject line with a period"
   fi
 
