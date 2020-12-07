@@ -20,6 +20,7 @@ stty -ixon
 # bash-git-completion
 if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
     __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
+    GIT_PROMPT_MASTER_BRANCHES='@(master|main)'
     source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
     GIT_PROMPT_THEME=Minimal
 fi
