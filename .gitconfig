@@ -23,7 +23,6 @@
 	cmd = code --wait $MERGED
 [alias]
 	last = log -1 --abbrev-commit --stat HEAD
-	branch-cleanup = "!git branch --merged master | grep -v \"\\* master\" | xargs -n 1 git push --delete origin; git branch --merged master | grep -v \"\\* master\" | xargs -n 1 git branch -d"
 	lg = log --abbrev-commit --graph --stat
 	st = status
 	ci = commit -v
@@ -34,6 +33,7 @@
 	lga = log --abbrev-commit --all --graph --stat
 	aliases = "!git config --global --list | grep alias | cut -d '.' -f 2-"
 	pc = "!git status; git log --all --graph --oneline -5"
+	tags = tag --list
 [pull]
 	rebase = false
 [rebase]
