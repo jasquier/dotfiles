@@ -3,6 +3,8 @@ angular-cli: CLI tool for Angular
 ansiweather: Weather in your terminal, with ANSI colors and Unicode symbols
 aom: Codec library for encoding and decoding AV1 video streams
 asciiquarium: Aquarium animation in ASCII art
+autoconf: Automatic configure script builder
+automake: Tool for generating GNU Standards-compliant Makefiles
 aview: ASCII-art image browser and animation viewer
 bandwhich: Terminal bandwidth utilization tool
 bash: Bourne-Again SHell, a UNIX command interpreter
@@ -212,4 +214,4 @@ steam
 twitch
 visual-studio-code
 vlc
-zoomus
+zoom
