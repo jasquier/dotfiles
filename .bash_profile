@@ -8,6 +8,9 @@ HISTFILESIZE=10000
 # always append to history
 shopt -s histappend
 
+# always confirm history substitutions
+shopt -s histverify
+
 # make history immediately available to all shells
 # export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
@@ -63,7 +66,7 @@ findnodemodules() { find . -name "node_modules" -prune; }
 mvnrepo() { mvn help:evaluate -Dexpression=settings.localRepository | grep -v "\[INFO\]"; }
 lm() { gls -AFgo --color --time-style="+| %F %T |" "$@" | tail +2 | tr -s " " | cut -d " " -f 4-; }
 lns() { cat package.json | jq -C .'scripts' "$@"; }
-pjson() { cat package.json | jq; }
+pj() { cat package.json | jq; }
 trash() { /bin/mv -i $@ /Users/jasquier/trash; }
 update_cpu_temps() {
     date >> ~/cpu_temps.txt
@@ -113,10 +116,10 @@ alias mkdir='mkdir -p'
 alias path='echo $PATH | tr -s ":" "\n"'
 # npm ls --depth 0 shorthand
 alias npmls='npm ls --depth 0'
-# show the package.json in the current dir
-alias pj='bat package.json'
 # quickly open todays notes
 alias note='~/notes/opennote.sh'
+# append the history list the the history file, then import it into our history db
+alias hai='history -a; hist import'
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
