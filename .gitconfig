@@ -38,3 +38,7 @@
 	rebase = false
 [rebase]
 	autoSquash = true
+[init]
+	defaultBranch = main
+[color]
+	ui = true
