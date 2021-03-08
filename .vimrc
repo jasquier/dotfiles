@@ -33,6 +33,9 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
+" make tabs 2 spaces in javascript files
+autocmd FileType javascript setlocal tabstop=2 shiftwidth=2
+
 " enable line wrapping
 set wrap
 
@@ -65,6 +68,12 @@ set showcmd
 
 " turn on line numbers
 set number
+
+" read externally changed files when un-suspending vim
+set autoread
+
+" save files when suspending (among other things)
+set autowrite
 
 " turn on the matchit plugin
 packadd! matchit
@@ -100,6 +109,5 @@ let g:netrw_preview=1
 let g:netrw_winsize=80
 
 " use our downloaded monokai colorscheme
-" https://raw.githubusercontent.com/crusoexia/vim-monokai/master/colors/monokai.vim
-:colorscheme monokai
+colorscheme monokai
 
