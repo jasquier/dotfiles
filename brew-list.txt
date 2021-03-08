@@ -3,6 +3,7 @@ angular-cli: CLI tool for Angular
 ansiweather: Weather in your terminal, with ANSI colors and Unicode symbols
 aom: Codec library for encoding and decoding AV1 video streams
 asciiquarium: Aquarium animation in ASCII art
+assimp: Portable library for importing many well-known 3D model formats
 autoconf: Automatic configure script builder
 automake: Tool for generating GNU Standards-compliant Makefiles
 aview: ASCII-art image browser and animation viewer
@@ -12,6 +13,7 @@ bash-completion: Programmable completion for Bash 3.2
 bash-git-prompt: Informative, fancy bash prompt for Git users
 bat: Clone of cat(1) with syntax highlighting and Git integration
 bdw-gc: Garbage collector for C and C++
+berkeley-db: High performance key/value database
 brew-cask-completion: Fish completion for brew-cask
 c-ares: Asynchronous DNS library
 cairo: Vector graphics library with cross-device output support
@@ -25,8 +27,10 @@ cowsay: Configurable talking characters in ASCII art
 ctags: Reimplementation of ctags(1)
 dart: The Dart SDK
 dav1d: AV1 decoder targeted to be small and fast
+dbus: Message bus system, providing inter-application communication
 deno: Secure runtime for JavaScript and TypeScript
 docker: Pack, ship and run any application as a lightweight container
+double-conversion: Binary-decimal and decimal-binary routines for IEEE doubles
 emacs: GNU Emacs text editor
 ffmpeg: Play, record, convert, and stream audio and video
 figlet: Banner-like program prints strings as ASCII art
@@ -48,6 +52,7 @@ git: Distributed revision control system
 git-lfs: Git extension for versioning large files
 glfw: Multi-platform library for OpenGL applications
 glib: Core application library for C
+global: Source code tag system
 gmp: GNU multiple precision arithmetic library
 gnu-indent: C code prettifier
 gnu-typist: GNU typing tutor
@@ -81,6 +86,7 @@ krb5: Network authentication protocol
 lame: High quality MPEG Audio Layer III (MP3) encoder
 leptonica: Image processing and image analysis library
 libass: Subtitle renderer for the ASS/SSA subtitle format
+libb2: Secure hashing function
 libbluray: Blu-Ray disc playback library for media players like VLC
 libev: Asynchronous event library
 libevent: Asynchronous event library
@@ -89,9 +95,12 @@ libidn2: International domain name library (IDNA2008, Punycode and TR46)
 libmodplug: Library from the Modplug-XMMS project
 libogg: Ogg Bitstream Library
 libpng: Library for manipulating PNG images
+libproxy: Library that provides automatic proxy configuration management
+libpthread-stubs: X.Org: pthread-stubs.pc
 librsvg: Library to render SVG files using Cairo
 libsamplerate: Library for sample rate conversion of audio data
 libsndfile: C library for files containing sampled sound
+libsodium: NaCl networking and cryptography library
 libsoxr: High quality, one-dimensional sample-rate conversion library
 libtasn1: ASN.1 structure parser library
 libtiff: TIFF library and utilities
@@ -100,6 +109,12 @@ libunistring: C string library for manipulating Unicode strings
 libvidstab: Transcode video stabilization plugin
 libvorbis: Vorbis General Audio Compression Codec
 libvpx: VP8/VP9 video codec
+libx11: X.Org: Core X11 protocol client library
+libxau: X.Org: A Sample Authorization Protocol for X
+libxcb: X.Org: Interface to the X Window System protocol
+libxdmcp: X.Org: X Display Manager Control Protocol library
+libxext: X.Org: Library for common extensions to the X11 protocol
+libxrender: X.Org: Library for the Render Extension to the X11 protocol
 libyaml: YAML Parser
 libzip: C library for reading, creating, and modifying zip archives
 little-cms2: Color management engine supporting ICC profiles
@@ -116,6 +131,7 @@ mongodb-community: High-performance, schema-free, document-oriented database
 mongodb-database-tools: This package contains standard utilities for interacting with MongoDB.
 mono: Cross platform, open source .NET development framework
 monolith: CLI tool for saving complete web pages as a single HTML file
+mpdecimal: Library for decimal floating point arithmetic
 mysql: Open source relational database management system
 ncdu: NCurses Disk Usage
 ncurses: Text-based UI library
@@ -144,10 +160,10 @@ postgresql: Object-relational database system
 progress: Coreutils progress viewer
 protobuf: Protocol buffers (Google's data interchange format)
 protobuf@3.7: Protocol buffers (Google's data interchange format)
-python@2: Interpreted, interactive, object-oriented programming language
 python@3.8: Interpreted, interactive, object-oriented programming language
 python@3.9: Interpreted, interactive, object-oriented programming language
 qt: Cross-platform application and UI framework
+qt@5: Cross-platform application and UI framework
 rav1e: Fastest and safest AV1 video encoder
 readline: Library for command-line editing
 redis: Persistent key-value database, with built-in net interface
@@ -170,10 +186,11 @@ sqlite: Command-line interface for SQLite
 sqlmap: Penetration testing for SQL injection and database servers
 srt: Secure Reliable Transport
 task: Feature-rich console based todo list manager
+tcl-tk: Tool Command Language
 telnet: User interface to the TELNET protocol
 terminal-notifier: Send macOS User Notifications from the command-line
 tesseract: OCR (Optical Character Recognition) engine
-thefuck: Programatically correct mistyped console commands
+thefuck: Programmatically correct mistyped console commands
 theora: Open video compression format
 tldr: Simplified and community-driven man pages
 tmux: Terminal multiplexer
@@ -191,11 +208,15 @@ webp: Image format providing lossless and lossy compression for web images
 wget: Internet file retriever
 x264: H.264/AVC encoder
 x265: H.265/HEVC encoder
+xorgproto: X.Org: Protocol Headers
 xpdf: PDF viewer
 xvid: High-performance, high-quality MPEG-4 video library
 xz: General-purpose data compression with high compression ratio
 z: Tracks most-used directories to make cd smarter
+zeromq: High-performance, asynchronous messaging library
+zimg: Scaling, colorspace conversion, and dithering library
 zsh: UNIX shell (command interpreter)
+zstd: Zstandard is a real-time compression algorithm
 discord
 firefox
 font-hack-nerd-font
@@ -211,7 +232,7 @@ robo-3t
 slack
 spotify
 steam
+tor-browser
 twitch
 visual-studio-code
 vlc
-zoom
