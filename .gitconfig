@@ -25,7 +25,7 @@
 	last = log -1 --abbrev-commit --stat HEAD
 	lg = log --abbrev-commit --graph --stat
 	st = status
-	ci = commit -v
+	ci = commit
 	co = checkout
 	tre = log --all --graph --oneline
 	diffstaged = diff --staged
