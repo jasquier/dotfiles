@@ -92,7 +92,6 @@ alias gss='git status -s "$@"'
 alias gch='git checkout "$@"'
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com "$@"'
 alias localip='ipconfig getifaddr en0 "$@"'
-alias n='npm "$@"'
 alias cls='clear "$@"'
 alias clock='tty-clock -c -C 6 "$@"'
 alias ss='echo "cols: $(tput cols)" && echo "lines: $(tput lines)" "$@"'
@@ -114,8 +113,6 @@ alias hists='history | grep --color "$@"'
 alias mkdir='mkdir -p'
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
-# npm ls --depth 0 shorthand
-alias npmls='npm ls --depth 0'
 # quickly open todays notes
 alias note='~/notes/opennote.sh'
 # append the history list the the history file, then import it into our history db
