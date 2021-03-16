@@ -4,7 +4,7 @@ set nocompatible
 " enable plugins (for netrw)
 filetype plugin on
 
-" search down into subfolder
+" search down into sub folder
 " provides tab completion for all file related tasks
 set path+=**
 
@@ -77,6 +77,12 @@ set autowrite
 
 " turn on the matchit plugin
 packadd! matchit
+
+" turn on spell checking
+set spell spelllang=en_us
+
+" disable the check for capital letters at the start of sentences / files
+set spellcapcheck=""
 
 " in git commit messages
 "   turn off spell checking
