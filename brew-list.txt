@@ -102,6 +102,7 @@ libsamplerate: Library for sample rate conversion of audio data
 libsndfile: C library for files containing sampled sound
 libsodium: NaCl networking and cryptography library
 libsoxr: High quality, one-dimensional sample-rate conversion library
+libssh2: C library implementing the SSH2 protocol
 libtasn1: ASN.1 structure parser library
 libtiff: TIFF library and utilities
 libtool: Generic library support script
@@ -171,6 +172,7 @@ rogue: Dungeon crawling video game
 rtmpdump: Tool for downloading RTMP streaming media
 rubberband: Audio time stretcher tool and library
 ruby: Powerful, clean, object-oriented scripting language
+rust: Safe, concurrent, practical language
 sass: Stylesheet Preprocessor
 sbt: Build tool for Scala projects
 screenfetch: Generate ASCII art with terminal, shell, and OS info
