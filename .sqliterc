@@ -1,0 +1,4 @@
+.mode column
+.headers on
+.changes on
+.timer on
