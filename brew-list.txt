@@ -15,6 +15,7 @@ bat: Clone of cat(1) with syntax highlighting and Git integration
 bdw-gc: Garbage collector for C and C++
 berkeley-db: High performance key/value database
 brew-cask-completion: Fish completion for brew-cask
+brotli: Generic-purpose lossless compression algorithm by Google
 c-ares: Asynchronous DNS library
 cairo: Vector graphics library with cross-device output support
 cask: Emacs dependency management
@@ -25,7 +26,7 @@ cmatrix: Console Matrix
 coreutils: GNU File, Shell, and Text utilities
 cowsay: Configurable talking characters in ASCII art
 ctags: Reimplementation of ctags(1)
-dart: The Dart SDK
+dart: Dart SDK
 dav1d: AV1 decoder targeted to be small and fast
 dbus: Message bus system, providing inter-application communication
 deno: Secure runtime for JavaScript and TypeScript
@@ -40,6 +41,7 @@ fortune: Infamous electronic fortune-cookie generator
 freetype: Software library to render fonts
 frei0r: Minimalistic plugin API for video effects
 fribidi: Implementation of the Unicode BiDi algorithm
+fzf: Command-line fuzzy finder written in Go
 gd: Graphics library to dynamically manipulate images
 gdb: GNU debugger
 gdbm: GNU database manager
@@ -53,8 +55,10 @@ git-lfs: Git extension for versioning large files
 glfw: Multi-platform library for OpenGL applications
 glib: Core application library for C
 global: Source code tag system
+glow: Render markdown on the CLI
 gmp: GNU multiple precision arithmetic library
 gnu-indent: C code prettifier
+gnu-sed: GNU implementation of the famous stream editor
 gnu-typist: GNU typing tutor
 gnu-units: GNU unit conversion tool
 gnutls: GNU Transport Layer Security (TLS) Library
@@ -107,6 +111,7 @@ libtasn1: ASN.1 structure parser library
 libtiff: TIFF library and utilities
 libtool: Generic library support script
 libunistring: C string library for manipulating Unicode strings
+libuv: Multi-platform support library with a focus on asynchronous I/O
 libvidstab: Transcode video stabilization plugin
 libvorbis: Vorbis General Audio Compression Codec
 libvpx: VP8/VP9 video codec
@@ -123,10 +128,13 @@ lolcat: Rainbows and unicorns in your console!
 lsd: Clone of ls with colorful output, file type icons, and more
 lua: Powerful, lightweight programming language
 lynx: Text-based web browser
+lz4: Extremely Fast Compression algorithm
 lzo: Real-time data compression library
+m4: Macro processing language
 markdown: Text-to-HTML conversion tool
 maven: Java-based project management
 maven-completion: Bash completion for Maven
+mdp: Command-line based markdown presentation tool
 mit-scheme: MIT/GNU Scheme development tools and runtime library
 mongodb-community: High-performance, schema-free, document-oriented database
 mongodb-database-tools: This package contains standard utilities for interacting with MongoDB.
@@ -161,6 +169,7 @@ postgresql: Object-relational database system
 progress: Coreutils progress viewer
 protobuf: Protocol buffers (Google's data interchange format)
 protobuf@3.7: Protocol buffers (Google's data interchange format)
+pup: Parse HTML at the command-line
 python@3.8: Interpreted, interactive, object-oriented programming language
 python@3.9: Interpreted, interactive, object-oriented programming language
 qt: Cross-platform application and UI framework
@@ -181,6 +190,7 @@ sdl2_image: Library for loading images as SDL surfaces and textures
 sdl2_mixer: Sample multi-channel audio mixer library
 sdl2_ttf: Library for using TrueType fonts in SDL applications
 shfmt: Autoformat shell script source code
+six: Python 2 and 3 compatibility utilities
 sl: Prints a steam locomotive if you type sl instead of ls
 snappy: Compression/decompression library aiming for high speed
 speex: Audio codec designed for speech
