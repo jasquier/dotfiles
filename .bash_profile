@@ -11,6 +11,9 @@ shopt -s histappend
 # always confirm history substitutions
 shopt -s histverify
 
+# use vi mode for line editing
+set -o vi
+
 # make history immediately available to all shells
 # export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
@@ -33,6 +36,12 @@ HEROKU_AC_BASH_SETUP_PATH=/Users/jasquier/Library/Caches/heroku/autocomplete/bas
 
 # gh autocomplete setup
 eval "$(gh completion --shell bash)"
+
+# node autocomplete setup
+source <(node --completion-bash)
+
+# npm autocomplete setup
+source <(npm completion)
 
 # thefuck command
 eval $(thefuck --alias)
@@ -66,11 +75,16 @@ findnodemodules() { find . -name "node_modules" -prune; }
 mvnrepo() { mvn help:evaluate -Dexpression=settings.localRepository | grep -v "\[INFO\]"; }
 lm() { gls -AFgo --color --time-style="+| %F %T |" "$@" | tail +2 | tr -s " " | cut -d " " -f 4-; }
 lns() { cat package.json | jq -C .'scripts' "$@"; }
-pj() { cat package.json | jq; }
+pj() { cat package.json | jq -C; }
 trash() { /bin/mv -i $@ /Users/jasquier/trash; }
 update_cpu_temps() {
-    date >> ~/cpu_temps.txt
-    osx-cpu-temp >> ~/cpu_temps.txt
+    date >> ~/cpu_temps.txt;
+    osx-cpu-temp >> ~/cpu_temps.txt;
+}
+# display the five day and current weather
+weather() {
+    ansiweather -F | cut -d ':' -f 2- | gsed -e 's/-/\n/g';
+    ansiweather | gsed -e 's/-/\n/g';
 }
 
 # aliases
@@ -114,9 +128,13 @@ alias mkdir='mkdir -p'
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
 # quickly open todays notes
-alias note='~/notes/opennote.sh'
-# append the history list the the history file, then import it into our history db
+alias notes='~/notes/opennote.sh'
+# append the history list to the history file, then import it into our history db
 alias hai='history -a; hist import'
+# always save history before exiting
+alias exit='history -a && hist import && exit'
+# print the most recently visited directories
+alias dirhist="cat ~/.z | sort -t '|' -k 3n | cut -d '|' -f 1 | gsed -r 's/\/Users\/jasquier/~/g'"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
