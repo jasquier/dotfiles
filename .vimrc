@@ -33,8 +33,10 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
-" make tabs 2 spaces in javascript files
+" make tabs 2 spaces in javascript, typescript, and html files
 autocmd FileType javascript setlocal tabstop=2 shiftwidth=2
+autocmd FileType typescript setlocal tabstop=2 shiftwidth=2
+autocmd FileType html setlocal tabstop=2 shiftwidth=2
 
 " enable line wrapping
 set wrap
@@ -84,6 +86,9 @@ set spell spelllang=en_us
 " disable the check for capital letters at the start of sentences / files
 set spellcapcheck=""
 
+" allow sharing of OSX and vim clipboards
+set clipboard=unnamed
+
 " in git commit messages
 "   turn off spell checking
 "   hard wrap at 72 characters
@@ -117,3 +122,22 @@ let g:netrw_winsize=80
 " use our downloaded monokai colorscheme
 colorscheme monokai
 
+" run prettier on save
+autocmd BufWritePre *.js Neoformat
+autocmd BufWritePre *.ts Neoformat
+autocmd BufWritePre *.jsx Neoformat
+autocmd BufWritePre *.tsx Neoformat
+autocmd BufWritePre *.html Neoformat
+autocmd BufWritePre *.css Neoformat
+autocmd BufWritePre *.json Neoformat
+
+" vim-plug setup
+call plug#begin('~/.vim/plugged')
+
+Plug 'https://github.com/pangloss/vim-javascript.git'
+Plug 'preservim/nerdtree'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'sbdchd/neoformat'
+
+call plug#end()
