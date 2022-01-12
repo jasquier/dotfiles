@@ -11,6 +11,13 @@ set path+=**
 " display all matching files when we tab complete
 set wildmenu
 
+" do not search in certain folders when matching files
+set wildignore+=*/.git/**/*
+set wildignore+=*/node_modules/**/*
+
+" always show the status line
+set laststatus=2
+
 " turn on the ruler
 set ruler
 
@@ -33,16 +40,16 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
-" make tabs 2 spaces in javascript, typescript, and html files
+" make tabs 2 spaces in various file types
 autocmd FileType javascript setlocal tabstop=2 shiftwidth=2
 autocmd FileType typescript setlocal tabstop=2 shiftwidth=2
 autocmd FileType html setlocal tabstop=2 shiftwidth=2
+autocmd FileType json setlocal tabstop=2 shiftwidth=2
+autocmd FileType css setlocal tabstop=2 shiftwidth=2
+autocmd FileType java setlocal tabstop=2 shiftwidth=2
 
 " enable line wrapping
 set wrap
-
-" show command line tab completion as a menu
-set wildmenu
 
 " set the window title to the current file
 set title
@@ -89,6 +96,12 @@ set spellcapcheck=""
 " allow sharing of OSX and vim clipboards
 set clipboard=unnamed
 
+" keep the git gutter sign column always visible
+set signcolumn=yes
+
+" speed up the update time to make git gutter symbols show up quicker
+set updatetime=100
+
 " in git commit messages
 "   turn off spell checking
 "   hard wrap at 72 characters
@@ -119,9 +132,6 @@ let g:netrw_preview=1
 " when a preview window is open make it take 80% of the available columns
 let g:netrw_winsize=80
 
-" use our downloaded monokai colorscheme
-colorscheme monokai
-
 " run prettier on save
 autocmd BufWritePre *.js Neoformat
 autocmd BufWritePre *.ts Neoformat
@@ -130,14 +140,41 @@ autocmd BufWritePre *.tsx Neoformat
 autocmd BufWritePre *.html Neoformat
 autocmd BufWritePre *.css Neoformat
 autocmd BufWritePre *.json Neoformat
+autocmd BufWritePre *.java Neoformat
+
+" mappings
+nnoremap clg iconsole.log()<ESC>i
+inoremap jk <ESC>
+inoremap kj <ESC>
+inoremap jkw <ESC>:w<CR>
+inoremap kjw <ESC>:w<CR>
+nnoremap : ;
+nnoremap ; :
 
 " vim-plug setup
 call plug#begin('~/.vim/plugged')
 
 Plug 'https://github.com/pangloss/vim-javascript.git'
+Plug 'drewtempelmeyer/palenight.vim'
 Plug 'preservim/nerdtree'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'sbdchd/neoformat'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
+
+" add NERDTree mappings
+nnoremap <C-b> :NERDTreeToggle<CR>
+
+" color the status line foreground (only use when using monokai)
+" hi StatusLine ctermfg=58
+
+" use our downloaded monokai colorscheme
+" colorscheme monokai
+
+" use our palenight plugin colorscheme
+set background=dark
+colorscheme palenight
+let g:lightline = { 'colorscheme': 'palenight' }
+let g:airline_theme = "palenight"
