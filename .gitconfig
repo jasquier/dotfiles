@@ -42,3 +42,5 @@
 	defaultBranch = main
 [color]
 	ui = true
+[help]
+	autoCorrect = 10
