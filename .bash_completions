@@ -1,0 +1,14 @@
+# homebrew autocimplete setup
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+# heroku autocomplete setup
+HEROKU_AC_BASH_SETUP_PATH=/Users/jasquier/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH
+
+# gh autocomplete setup
+eval "$(gh completion --shell bash)"
+
+# node autocomplete setup
+source <(node --completion-bash)
+
+# npm autocomplete setup
+source <(npm completion)

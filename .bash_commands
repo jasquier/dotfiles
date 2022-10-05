@@ -1,0 +1,22 @@
+# bash-git-prompt
+if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+  __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
+  GIT_PROMPT_MASTER_BRANCHES='@(master|main)'
+  source "/usr/local/opt/bash-git-prompt/share/gitprompt.sh"
+  GIT_PROMPT_THEME=Minimal
+fi
+
+# thefuck
+eval $(thefuck --alias)
+
+# z
+. /usr/local/etc/profile.d/z.sh
+
+# jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
