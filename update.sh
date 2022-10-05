@@ -2,9 +2,14 @@
 
 echo "Copying dotfiles from ~ to ."
 cp -f /Users/jasquier/.bash_profile .
+cp -f /Users/jasquier/.bash_aliases .
+cp -f /Users/jasquier/.bash_functions .
+cp -f /Users/jasquier/.bash_completions .
+cp -f /Users/jasquier/.bash_commands .
 cp -f /Users/jasquier/.editorconfig .
 cp -f /Users/jasquier/.gitconfig .
 cp -f /Users/jasquier/.vimrc .
+cp -f /Users/jasquier/.config/nvim/init.vim .
 cp -f /Users/jasquier/.vim/colors/monokai.vim .vim/colors/
 cp -f /Users/jasquier/.sqliterc .
 cp -f /Users/jasquier/.githooks/* .githooks/
