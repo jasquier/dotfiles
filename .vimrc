@@ -60,8 +60,15 @@ set backspace=indent,eol,start
 " confirm when closing unsaved files
 set confirm
 
+" NB: The following two autocmds are a kludge to get around the fact that the FileType plugin
+" sets formatoptions after this vimrc thereby overwriting `set formatoptions` usage
+"
 " delete comment characters when joining lines
-set formatoptions+=j
+autocmd FileType * set formatoptions+=j
+" do not wrap comments on the next line
+" do not insert comment leader after hitting O/o in normal mode
+" do not insert comment leader after hitting enter in insert mode
+autocmd FileType * set formatoptions-=cro
 
 " increase the undo limit
 set history=1000
@@ -142,6 +149,9 @@ autocmd BufWritePre *.css Neoformat
 autocmd BufWritePre *.json Neoformat
 autocmd BufWritePre *.java Neoformat
 
+" run rustfmt on save
+let g:rustfmt_autosave = 1
+
 " mappings
 nnoremap clg iconsole.log()<ESC>i
 inoremap jk <ESC>
@@ -161,6 +171,7 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'sbdchd/neoformat'
 Plug 'airblade/vim-gitgutter'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
