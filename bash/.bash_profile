@@ -39,16 +39,19 @@ set -o vi
 # allow the use of ctrl-s in ctrl-r history searches
 stty -ixon
 
-# fix bash tab compeletion
-## if there are multiple matches for completion, Tab should cycle through them
+# fix bash tab completion
+# if there are multiple matches for completion, Tab should cycle through them
 bind 'TAB':menu-complete
 
-## display a list of the matching files
+# display a list of the matching files
 bind "set show-all-if-ambiguous on"
 
-## perform partial completion on the first Tab press,
-## only start cycling full results on the second Tab press
+# perform partial completion on the first Tab press,
+# only start cycling full results on the second Tab press
 bind "set menu-complete-display-prefix on"
+
+# put the kafka bin on the path
+export PATH=$PATH:/usr/local/Cellar/kafka/3.4.0/bin
 
 # source aliases
 if [ -f ~/.bash_aliases ]; then
@@ -88,3 +91,7 @@ hist import
 fortune | cowsay
 ## remind me to check my task list
 echo "Don't forget to check your tasks..." | lolcat
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
