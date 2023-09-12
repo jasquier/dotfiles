@@ -1,11 +1,11 @@
 #!/bin/bash
 
 echo "Copying dotfiles from ~ to ."
-cp -f /Users/jasquier/.bash_profile .
-cp -f /Users/jasquier/.bash_aliases .
-cp -f /Users/jasquier/.bash_functions .
-cp -f /Users/jasquier/.bash_completions .
-cp -f /Users/jasquier/.bash_commands .
+cp -f /Users/jasquier/.bash_profile ./bash
+cp -f /Users/jasquier/.bash_aliases ./bash
+cp -f /Users/jasquier/.bash_functions ./bash
+cp -f /Users/jasquier/.bash_completions ./bash
+cp -f /Users/jasquier/.bash_commands ./bash
 cp -f /Users/jasquier/.editorconfig .
 cp -f /Users/jasquier/.gitconfig .
 cp -f /Users/jasquier/.vimrc .
