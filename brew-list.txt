@@ -1,8 +1,11 @@
 aalib: Portable ASCII art graphics library
+abseil: C++ Common Libraries
 angular-cli: CLI tool for Angular
 ansiweather: Weather in your terminal, with ANSI colors and Unicode symbols
 aom: Codec library for encoding and decoding AV1 video streams
+aribb24: Library for ARIB STD-B24, decoding JIS 8 bit characters and parsing MPEG-TS
 asciiquarium: Aquarium animation in ASCII art
+aspell: Spell checker with better logic than ispell
 assimp: Portable library for importing many well-known 3D model formats
 autoconf: Automatic configure script builder
 automake: Tool for generating GNU Standards-compliant Makefiles
@@ -16,6 +19,7 @@ bdw-gc: Garbage collector for C and C++
 berkeley-db: High performance key/value database
 brew-cask-completion: Fish completion for brew-cask
 brotli: Generic-purpose lossless compression algorithm by Google
+buf: New way of working with Protocol Buffers
 c-ares: Asynchronous DNS library
 ca-certificates: Mozilla CA certificate store
 cairo: Vector graphics library with cross-device output support
@@ -24,6 +28,7 @@ cassandra: Eventually consistent, distributed key-value store
 cataclysm: Fork/variant of Cataclysm Roguelike
 cjson: Ultralightweight JSON parser in ANSI C
 clang-format: Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
+cloc: Statistics utility to count lines of code
 cf-cli: [no description]
 cmake: Cross-platform make
 cmark-gfm: C implementation of GitHub Flavored Markdown
@@ -39,6 +44,7 @@ dav1d: AV1 decoder targeted to be small and fast
 dbus: Message bus system, providing inter-application communication
 deno: Secure runtime for JavaScript and TypeScript
 docker: Pack, ship and run any application as a lightweight container
+docker-completion: Bash, Zsh and Fish completion for Docker
 double-conversion: Binary-decimal and decimal-binary routines for IEEE doubles
 dsq: CLI tool for running SQL queries against JSON, CSV, Excel, Parquet, and more
 emacs: GNU Emacs text editor
@@ -48,6 +54,7 @@ ffmpeg: Play, record, convert, and stream audio and video
 figlet: Banner-like program prints strings as ASCII art
 findutils: Collection of GNU find, xargs, and locate
 flac: Free lossless audio codec
+fluid-synth: Real-time software synthesizer based on the SoundFont 2 specs
 fontconfig: XML-based font configuration API for X Windows
 fortune: Infamous electronic fortune-cookie generator
 freetype: Software library to render fonts
@@ -79,6 +86,7 @@ googler: Google Search and News from the command-line
 gradle: Open-source build automation tool based on the Groovy and Kotlin DSL
 graphite2: Smart font renderer for non-Roman scripts
 graphviz: Graph visualization software from AT&T and Bell Labs
+greed: Game of consumption
 grep: GNU grep, egrep and fgrep
 grip: GitHub Markdown previewer
 gsl: Numerical library for C and C++
@@ -89,6 +97,7 @@ heroku: Everything you need to get started with Heroku
 heroku-node: node.js dependency for heroku
 highway: Performance-portable, length-agnostic SIMD with runtime dispatch
 historian: Command-line utility for managing shell history in a SQLite database
+htmlq: Uses CSS selectors to extract bits content from HTML files
 htop: Improved top (interactive process viewer)
 http-server: Simple zero-configuration command-line HTTP server
 hunspell: Spell checker and morphological analyzer
@@ -105,7 +114,9 @@ jpeg: Image manipulation library
 jpeg-turbo: JPEG image codec that aids compression and decompression
 jpeg-xl: New file format for still image compression
 jq: Lightweight and flexible command-line JSON processor
+jsoncpp: Library for interacting with JSON
 kafka: Open-source distributed event streaming platform
+kotlin: Statically typed programming language for the JVM
 krb5: Network authentication protocol
 lame: High quality MPEG Audio Layer III (MP3) encoder
 leptonica: Image processing and image analysis library
@@ -138,6 +149,7 @@ libtasn1: ASN.1 structure parser library
 libtermkey: Library for processing keyboard entry from the terminal
 libtiff: TIFF library and utilities
 libtool: Generic library support script
+libunibreak: Implementation of the Unicode line- and word-breaking algorithms
 libunistring: C string library for manipulating Unicode strings
 libuv: Multi-platform support library with a focus on asynchronous I/O
 libvidstab: Transcode video stabilization plugin
@@ -151,6 +163,7 @@ libxcb: X.Org: Interface to the X Window System protocol
 libxdmcp: X.Org: X Display Manager Control Protocol library
 libxext: X.Org: Library for common extensions to the X11 protocol
 libxml2: GNOME XML library
+libxmp: C library for playback of module music (MOD, S3M, IT, etc)
 libxrender: X.Org: Library for the Render Extension to the X11 protocol
 libyaml: YAML Parser
 libzip: C library for reading, creating, and modifying zip archives
@@ -185,6 +198,7 @@ mysql: Open source relational database management system
 ncdu: NCurses Disk Usage
 ncurses: Text-based UI library
 neovim: Ambitious Vim-fork focused on extensibility and agility
+nethack: Single-player roguelike video game
 netpbm: Image manipulation
 nettle: Low-level cryptographic library
 nghttp2: HTTP/2 C Library
@@ -200,7 +214,9 @@ openjdk@17: Development kit for the Java programming language
 openjpeg: Library for JPEG-2000 image manipulation
 openldap: Open source suite of directory software
 openssl@1.1: Cryptography and SSL/TLS Toolkit
+openssl@3: Cryptography and SSL/TLS Toolkit
 opus: Audio codec
+opusfile: API for decoding and seeking in .opus files
 osx-cpu-temp: Outputs current CPU temperature for OSX
 p11-kit: Library to load and enumerate PKCS#11 modules
 pango: Framework for layout and rendering of i18n text
@@ -211,13 +227,19 @@ springboot: [no description]
 pixman: Low-level library for pixel manipulation
 pkg-config: Manage compile and link flags for libraries
 plantuml: Draw UML diagrams
-postgresql@14: Object-relational database system
+portaudio: Cross-platform library for audio I/O
+postgresql@15: Object-relational database system
 progress: Coreutils progress viewer
 protobuf: Protocol buffers (Google's data interchange format)
+protobuf@21: Protocol buffers (Google's data interchange format)
 protobuf@3.7: Protocol buffers (Google's data interchange format)
 pup: Parse HTML at the command-line
+puzzles: Collection of one-player puzzle games
+pygments: Generic syntax highlighter
+python-certifi: Mozilla CA bundle for Python
 python-typing-extensions: Backported and experimental type hints for Python
 python@3.10: Interpreted, interactive, object-oriented programming language
+python@3.11: Interpreted, interactive, object-oriented programming language
 python@3.8: Interpreted, interactive, object-oriented programming language
 python@3.9: Interpreted, interactive, object-oriented programming language
 pyyaml: YAML framework for Python
@@ -227,6 +249,7 @@ rabbitmq: Messaging broker
 rav1e: Fastest and safest AV1 video encoder
 readline: Library for command-line editing
 redis: Persistent key-value database, with built-in net interface
+ripgrep: Search tool like grep and The Silver Searcher
 rogue: Dungeon crawling video game
 rtmpdump: Tool for downloading RTMP streaming media
 rubberband: Audio time stretcher tool and library
@@ -248,6 +271,7 @@ speex: Audio codec designed for speech
 sqlite: Command-line interface for SQLite
 sqlmap: Penetration testing for SQL injection and database servers
 srt: Secure Reliable Transport
+svt-av1: AV1 encoder
 task: Feature-rich console based todo list manager
 tcl-tk: Tool Command Language
 telnet: User interface to the TELNET protocol
@@ -259,6 +283,7 @@ tldr: Simplified and community-driven man pages
 tmux: Terminal multiplexer
 tnftp: NetBSD's FTP client
 tomcat: Implementation of Java Servlet and JavaServer Pages
+trader: Star Traders
 travis: Command-line client for Travis CI
 tree: Display directories as trees (with optional color/HTML output)
 tree-sitter: Parser generator tool and incremental parsing library
@@ -267,8 +292,10 @@ tty-solitaire: Ncurses-based klondike solitaire game
 unbound: Validating, recursive, caching DNS resolver
 unibilium: Very basic terminfo library
 universal-ctags: Maintained ctags implementation
+unixodbc: ODBC 3 connectivity for UNIX
 utf8proc: Clean C library for processing UTF-8 Unicode data
 vim: Vi 'workalike' with many additional features
+w3m: Pager/text based browser
 watch: Executes a program periodically, showing output fullscreen
 webp: Image format providing lossless and lossy compression for web images
 wget: Internet file retriever
@@ -285,25 +312,6 @@ zeromq: High-performance, asynchronous messaging library
 zimg: Scaling, colorspace conversion, and dithering library
 zlib: General-purpose lossless data-compression library
 zookeeper: Centralized server for distributed coordination of services
+zork: Dungeon modified from FORTRAN to C
 zsh: UNIX shell (command interpreter)
 zstd: Zstandard is a real-time compression algorithm
-bluejeans
-discord
-firefox
-font-hack-nerd-font
-github
-google-chrome
-intellij-idea-ce
-iterm2
-mono-mdk
-postman
-racket
-rectangle
-robo-3t
-slack
-spotify
-steam
-tor-browser
-twitch
-visual-studio-code
-vlc
