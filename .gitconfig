@@ -34,6 +34,10 @@
 	aliases = "!git config --global --list | grep alias | cut -d '.' -f 2-"
 	pc = "!git status; git log --all --graph --oneline -5"
 	tags = tag --list
+	gr = grep -n
+	rbi = "!f() { git rebase -i HEAD~$1; }; f"
+	lgp = log --abbrev-commit --graph --patch --stat
+	fix = "!f() { git commit --fixup=:/$1; }; f"
 [pull]
 	rebase = false
 [rebase]
